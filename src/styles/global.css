@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#app{
+  height: 100vh;
+}
+
+:root{
+  --dark-500: #1a1a1a;
+  --dark-100: #242424;
+
+  --blue-100: #d3e2f8;
+  --blue-300: #3AB4F2;
+  --blue-600: #156f9e;
+
+  --light: #ffffff;
+
+  --brand: #c61e06;
+}
+
+.img-responsive{
+  max-width: 100%;
+}
