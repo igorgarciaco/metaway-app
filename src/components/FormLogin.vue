@@ -19,27 +19,27 @@ export default {
 
   methods: {
     submitForm() {
-      axios({
-        method: 'post',
-        url: 'https://metawaydemo.vps-kinghost.net:8487/api/auth/login',
-        data: this.form,
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Access-Control-Allow-Origin': '*'
-        }
-      })
-        .then((res) => {
-          alert(res)
-          this.$emit("loader");
-          this.$router.push('/');
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-      //  this.$emit("loader");
-      //  setTimeout(() => {
-      //   this.$router.push('/');
-      // }, 2000);
+      // axios({
+      //   method: 'post',
+      //   url: 'https://metawaydemo.vps-kinghost.net:8487/api/auth/login',
+      //   data: this.form,
+      //   headers: {
+      //     'Content-Type': 'application/x-www-form-urlencoded',
+      //     'Access-Control-Allow-Origin': '*'
+      //   }
+      // })
+      //   .then((res) => {
+      //     alert(res)
+      //     this.$emit("loader");
+      //     this.$router.push('/');
+      //   })
+      //   .catch((err) => {
+      //     console.log(err)
+      //   })
+       this.$emit("loader");
+       setTimeout(() => {
+        this.$router.push('/');
+      }, 2000);
     },
 
     toggleShow() {
